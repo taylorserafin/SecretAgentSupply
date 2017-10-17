@@ -1,0 +1,228 @@
+html {
+  font-size: 18px;
+  background-color: white;
+}
+
+body {
+  line-height: 1.4em;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: Helvetica;
+}
+
+/*Header Section*/
+
+/*Top Banner with Logo and Name*/
+.logo {
+  background-color: black;
+  color: white;
+}
+
+.logo .container {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 12px 0.5em;
+  font-size: 1rem;
+}
+
+.logo img {
+  height: 1.5em;
+  padding-right: 15px;
+}
+
+/*Main Banner*/
+.new-arrival {
+  background-image: url("../../resources/images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25em;
+}
+
+.box {
+  font-weight: bold;
+  width: 20em;
+  padding: 2em 3em;
+  color: white;
+  background-color: black;
+  position: relative;
+  top: 9em;
+}
+
+.box h1 {
+  font-size: 2em;
+  line-height: 1.2em;
+  margin: 0.25em 0;
+}
+
+
+/*Navigation Styling*/
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+nav .container {
+  padding: 0.75em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*End of Header Styling*/
+
+/*Product Grid Styling*/
+.product {
+  width: 30%;
+}
+
+.product-watch {
+  width: 30%;
+}
+
+.product-glasses {
+  width: 30%;
+}
+
+.products {
+  margin: 3em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-image {
+  border: 4px solid;
+  padding: 2em 0;
+  height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image img {
+  max-width: 8em;
+}
+
+.description {
+  background-color: black;
+  color: white;
+  padding: 0.5em 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.business-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4em;
+}
+
+.info {
+  width: 35%;
+}
+
+.title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1em 0 1em 2em;
+}
+
+/*End of Product Grid Styling*/
+
+/*Footer Styling*/
+footer {
+  background-color: black;
+  color: white;
+  text-align: left;
+  font-size: .65em;
+}
+
+footer .container {
+  padding: 5rem 0;
+}
+
+/*End of Footer Styling*/
+
+/*Media Query Stylings*/
+
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size:16px;
+  }
+}
+
+@media only screen and (min-width:1025px) {
+  nav .mobile-nav{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav .container {
+    display: none;
+  }
+  nav .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+  .product-watch {
+  width:47%;
+}
+  .product-glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .new-arrival {
+    height: 15em;
+  }
+  .box {
+    width: 100%;
+    padding: 1em 2em;
+    top: 10em;
+  }
+  .box h3 {
+    font-size: .77rem;
+  }
+  .box h1 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .product,
+  .business-info {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+  .product-watch {
+    display: none;
+  }
+  .info {
+    width: 90%
+    margin: 0.5em auto;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    text-align: center;
+  }
+}
